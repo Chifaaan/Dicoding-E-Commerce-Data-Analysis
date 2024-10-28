@@ -6,3 +6,4 @@ warnings
 seaborn
 matplotlib
 folium
+Babel
