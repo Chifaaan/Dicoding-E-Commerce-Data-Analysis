@@ -4,7 +4,7 @@ import warnings
 import plotly.express as px
 warnings.filterwarnings('ignore')
 
-df = pd.read_csv('main_data.csv')
+df = pd.read_csv('dashboard/main_data.csv')
 df['order_approved_at'] = pd.to_datetime(df['order_approved_at'], errors='coerce')
 
 #Sidebar berisi Filter, Titles dan Description
