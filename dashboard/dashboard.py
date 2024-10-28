@@ -137,7 +137,7 @@ fig_worst_category = px.bar(
      x=worst_category.values,
      y=worst_category.index,
      orientation='h',
-     color_discrete_sequence=['red'],
+     color_discrete_sequence=['#FF0000'],
      text_auto='.2s'
 )
 fig_worst_category.update_layout(xaxis_title="Jumlah Pelanggan Unik", yaxis_title="Category")
@@ -165,7 +165,7 @@ fig_best_state = px.bar(
     best_state,
     x=best_state.index,
     y=best_state.values,
-    color_discrete_sequence=['green'],
+    color_discrete_sequence=['#50C878'],
     text_auto='.2s'
 )
 fig_best_state.update_layout(xaxis_title="Negara Bagian", yaxis_title="Jumlah Pelanggan Unik")
@@ -176,7 +176,7 @@ fig_worst_state = px.bar(
     worst_state,
     x=worst_state.index,
     y=worst_state.values,
-    color_discrete_sequence=['red'],
+    color_discrete_sequence=['#FF0000'],
     text_auto='.2s'
 )
 fig_worst_state.update_layout(xaxis_title="Negara Bagian", yaxis_title="Jumlah Pelanggan Unik")
