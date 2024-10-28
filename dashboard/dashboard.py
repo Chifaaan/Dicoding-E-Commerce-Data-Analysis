@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
+import warnings
 import plotly.express as px
+warnings.filterwarnings('ignore')
 
 df = pd.read_csv('main_data.csv')
 df['order_approved_at'] = pd.to_datetime(df['order_approved_at'], errors='coerce')
